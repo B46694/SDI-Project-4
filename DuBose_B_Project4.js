@@ -310,17 +310,17 @@ console.log("Come on man!!... " + function11(array11, int11));
 
 // Problem 12
 var myKey = new Array ();
- myKey = [{"a":1}, {"a":2}, {"a":3}, {"b":1}];
+ myKey = [{a:1}, {a:2}, {a:3}, {b:1}];
 var compare = "a";
 
-var keyFunction = function (myKey, compare){
-   return myKey.sort(function(a, b) {
-	   
-       var x = a[compare]; var y = b[compare];
-	   
-       return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-   });
-		
+var keyFunction = function (a,b) {
+ 	if (a.a < b.a)
+  	  return -1;
+	 if (a.a > b.a)
+ 	  return 1;
+ 	return 0;
 };
 
-console.log("Lets hope this works " + keyFunction(myKey, compare));
+
+
+console.dir(myKey.sort(keyFunction));
