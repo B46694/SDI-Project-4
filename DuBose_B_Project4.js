@@ -19,17 +19,17 @@ var numberCheck = function(number){
 	var secondIns = (number.substr(4,3));
 	var thirdIns = (number.substr(8,4));
 	
-	if(firstIns.indexOf('.')){
+	if(firstIns.indexOf(".")){
 		return false;	
 	}
 	
 	
-	if(secondIns.indexOf('.')){
+	if(secondIns.indexOf(".")){
 		return false;	
 	}
 	
 	
-	if(thirdIns.indexOf('.')){
+	if(thirdIns.indexOf(".")){
 		return false;	
 	}
 	
@@ -70,7 +70,7 @@ var emailCheck = function(email){
 		return false;
 	}
 	
-	var dotPos = email.indexOf('.')+1;
+	var dotPos = email.indexOf(".")+1;
 	
 	if(email.length - dotPos != 3){
 		return false;
@@ -98,33 +98,33 @@ var httpCheck = function (http){
 };
 
 console.log("*********** Problem 3 ***********");
-console.log("Blah " + httpCheck(http1));
-console.log("Blah " + httpCheck(http2));
+console.log("Is " + http1 + " a URL?: " + httpCheck(http1));
+console.log("Is " + http2 + " a URL?: " + httpCheck(http2));
 
 
 // Problem 4 
 
-var string1 = ("why is this all due on thursday and not sunday?");
+var phrase1 = ("why is this all due on thursday and not sunday?");
 
 var upperCase = function (string){
 		
 	var upperarr = string.split(" ");
 	
-	var formatString = '';
+	var formatString = "";
 	var formatArray = new Array();
 	
 	for(i=0;i<upperarr.length;i++){
 		formatArray.push(upperarr[i].charAt(0).toUpperCase() + upperarr[i].slice(1)); // pushes new string into a new array 
 	}
 	
-	formatString = formatArray.join(' ');
+	formatString = formatArray.join(" ");
 	
 	return formatString;
 	
 };
 
 console.log("*********** Problem 4 ***********");
-console.log(upperCase(string1));
+console.log("Lets convert a phrase to a title: " + upperCase(phrase1));
 
 
 // Problem 5
@@ -141,13 +141,13 @@ var sepReplace = function (names, comma, and){
 	
 };
 console.log("*********** Problem 5 ***********");
-console.log(sepReplace(names, comma, and));
+console.log("What are my favorite apple products?: " + sepReplace(names, comma, and));
 
 
 // Problem 6
 
 var Pi = Math.PI;
-var decimals = 19;
+var decimals = 5;
 
 var numbFormat = function(numb, deci){
 	if(typeof numb === "string"){
@@ -156,23 +156,24 @@ var numbFormat = function(numb, deci){
 		return numb.toFixed(deci);
 		}	
 };
-
-console.log(numbFormat(Pi, decimals));
 console.log("*********** Problem 6 ***********");
+console.log("Lets count " + Pi + " to 5 places: " + numbFormat(Pi, decimals));
+
 
 // Problem 7
+
 numb1 = 5;
 numb2 = 10;
 numb3 = 50; 
 
 var percentCheck = function(numb1, numb2, numb3){
-	var msg1 = 'First Number is not within ' + numb3 + '% of the Second Number';
-	var msg2 = "First number is less that " + numb2;
+	var msg1 = "First Number is not within " + numb3 + "% of the Second Number";
+	var msg2 = "First number is less than " + numb2;
 	
 	percent = parseFloat(numb3/100);
 	
 	if(numb1/numb2 <= percent){
-		msg1 = 'First Number is within ' + numb3 + '% of the Second Number';
+		msg1 = "First Number is within " + numb3 + "% of the Second Number";
 		}
 		
 	if(numb1 > numb2){
@@ -183,7 +184,9 @@ var percentCheck = function(numb1, numb2, numb3){
 console.log("*********** Problem 7 ***********");
 console.log(percentCheck(numb1, numb2, numb3));
 
+
 // Problem 8 
+
 var date1 = ("July 4, 1776");
 var date2 = ("March 1, 1995");
 var units = ("days");
@@ -210,15 +213,15 @@ var dateTest = function (date1, date2, units){
        }
 };
 console.log("*********** Problem 8 ***********");
-console.log("Did it work? " + dateTest(date1, date2, units));
+console.log("I was born " + dateTest(date1, date2, units) + " days ater the birth of our country.");
 
 
 // Problem 9 
 
 var converted = "123456";
-	var flag = true;
+var flag = true;
 	
-	isNaN(converted) == false ? flag == false : flag == true;
+isNaN(converted) == false ? flag == false : flag == true; // : is short for else statment
 	
 var funcNumb = function (converted, flag){
 	if(flag == false)
@@ -228,7 +231,7 @@ var funcNumb = function (converted, flag){
 	
 };
 console.log("*********** Problem 9 ***********");
-console.log("I Hope this Shi** works... I am so tired " + funcNumb(converted,flag));
+console.log("I am getting really tired... please work: " + funcNumb(converted,flag));
 
 
 // Problem 10
