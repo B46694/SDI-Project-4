@@ -7,8 +7,8 @@ var phoneNumber1 = ("251-752-3202");
 var phoneNumber2 = ("407-679-01000");
 var phoneNumber3 = ("407-679-0100.0");
 var numberCheck = function(number){
-	
 	var totalSet = number.length;
+	
 	if(totalSet != 12){
 		return false;
 		}
@@ -21,18 +21,13 @@ var numberCheck = function(number){
 	
 	if(firstIns.indexOf(".")){
 		return false;	
-	}
-	
-	
+		}		
 	if(secondIns.indexOf(".")){
 		return false;	
-	}
-	
-	
+		}
 	if(thirdIns.indexOf(".")){
 		return false;	
-	}
-	
+		}	
 	if(isNaN(firstIns)){
 		return false;		
 		}
@@ -47,8 +42,7 @@ var numberCheck = function(number){
 		return true;
 		}else{
 		return false;
-		}
-	
+		}	
 };
 console.log("*********** Problem 1 ***********");
 console.log("Is " + phoneNumber1 + " a phone number?: " + numberCheck(phoneNumber1));
@@ -61,7 +55,6 @@ console.log("Is " + phoneNumber3 + " a phone number?: " + numberCheck(phoneNumbe
 
 var email1 = ("fsosupport@fullsail");
 var email2 = ("brannon@fullsail.com");
-
 var emailCheck = function(email){
 	
 	var subMail = email.indexOf("@");
@@ -69,16 +62,16 @@ var emailCheck = function(email){
 	if(!subMail){
 		return false;
 	}
-	
+		
 	var dotPos = email.indexOf(".")+1;
 	
 	if(email.length - dotPos != 3){
 		return false;
 	}else{
 		return true;
-		}
-	
+		}	
 };
+
 console.log("*********** Problem 2 ***********");
 console.log("Is " + email1 + " an email?: " + emailCheck(email1));
 console.log("Is " + email2 + " an email?: " + emailCheck(email2));
@@ -88,7 +81,6 @@ console.log("Is " + email2 + " an email?: " + emailCheck(email2));
 
 var http1 = ("http://");
 var http2 = ("https://");
-
 var httpCheck = function (http){
 	if(http.substr(0, 7) == "http://" || http.substr(0, 7) == "https://"){
 		return true;
@@ -108,8 +100,7 @@ var phrase1 = ("why is this all due on thursday and not sunday?");
 
 var upperCase = function (string){
 		
-	var upperarr = string.split(" ");
-	
+	var upperarr = string.split(" ");	
 	var formatString = "";
 	var formatArray = new Array();
 	
@@ -119,8 +110,7 @@ var upperCase = function (string){
 	
 	formatString = formatArray.join(" ");
 	
-	return formatString;
-	
+	return formatString;	
 };
 
 console.log("*********** Problem 4 ***********");
@@ -132,14 +122,13 @@ console.log("Lets convert a phrase to a title: " + upperCase(phrase1));
 var comma = ",";
 var and = " &";
 var names = "Macs, iPhones, iPads";
-
 var sepReplace = function (names, comma, and){
 	var nameSplit = names.split(comma);
 	var nameJoin = nameSplit.join(and);
 	
-	return nameJoin;	
-	
+	return nameJoin;		
 };
+
 console.log("*********** Problem 5 ***********");
 console.log("What are my favorite apple products?: " + sepReplace(names, comma, and));
 
@@ -148,7 +137,6 @@ console.log("What are my favorite apple products?: " + sepReplace(names, comma, 
 
 var Pi = Math.PI;
 var decimals = 5;
-
 var numbFormat = function(numb, deci){
 	if(typeof numb === "string"){
 		return parseFloat(numb).toFixed(deci);
@@ -156,6 +144,7 @@ var numbFormat = function(numb, deci){
 		return numb.toFixed(deci);
 		}	
 };
+
 console.log("*********** Problem 6 ***********");
 console.log("Lets count " + Pi + " to 5 places: " + numbFormat(Pi, decimals));
 
@@ -165,7 +154,6 @@ console.log("Lets count " + Pi + " to 5 places: " + numbFormat(Pi, decimals));
 numb1 = 5;
 numb2 = 10;
 numb3 = 50; 
-
 var percentCheck = function(numb1, numb2, numb3){
 	var msg1 = "First Number is not within " + numb3 + "% of the Second Number";
 	var msg2 = "First number is less than " + numb2;
@@ -181,6 +169,7 @@ var percentCheck = function(numb1, numb2, numb3){
 		}
 	return msg1 + "\n" + msg2;
 };
+
 console.log("*********** Problem 7 ***********");
 console.log(percentCheck(numb1, numb2, numb3));
 
@@ -190,7 +179,6 @@ console.log(percentCheck(numb1, numb2, numb3));
 var date1 = ("July 4, 1776");
 var date2 = ("March 1, 1995");
 var units = ("days");
-
 var dateTest = function (date1, date2, units){
 
 	var d1 = new Date(date1);
@@ -212,6 +200,7 @@ var dateTest = function (date1, date2, units){
                return Math.round(difference_ms/days);
        }
 };
+
 console.log("*********** Problem 8 ***********");
 console.log("I was born " + dateTest(date1, date2, units) + " days ater the birth of our country.");
 
@@ -230,16 +219,15 @@ var funcNumb = function (converted, flag){
 	return parseFloat(converted);
 	
 };
+
 console.log("*********** Problem 9 ***********");
-console.log("I am getting really tired... please work: " + funcNumb(converted,flag));
+console.log("I am getting really tired... please convert: " + funcNumb(converted,flag));
 
 
 // Problem 10
 
-var newarr = [1, 2, 3, 4, 5, 8, 9, 10];
-
+var newarr = [1, 2, 3, 5, 8, 9, 10];
 var compare = 3;
-
 var numbLength = function(newarr, compare){
        
        for(i=0;i<newarr.length;i++){
@@ -248,8 +236,9 @@ var numbLength = function(newarr, compare){
        }
        
 };
+
 console.log("*********** Problem 10 ***********");
-console.log("Holy F Work " + numbLength(newarr, compare));
+console.log("Whats the next highest number from " + compare + ": " + numbLength(newarr, compare));
 
 
 // Problem 11 
@@ -274,7 +263,7 @@ var function11 = function(array11, int11){
 };
 
 console.log("*********** Problem 11 ***********");
-console.log("Come on man!!... " + function11(array11, int11));
+console.log("Whats the total of the numbers in my array?: " + function11(array11, int11));
 
 
 // Problem 12
