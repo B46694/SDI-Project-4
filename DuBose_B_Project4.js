@@ -309,8 +309,8 @@ var function11 = function(array11, int11){
 console.log("Come on man!!... " + function11(array11, int11));
 
 // Problem 12
- 
-var myKey = [{"B":1,"B":2,"B":3,"B":4,"B":5, "A":1}];
+var myKey = new Array ();
+ myKey = [{"a":1}, {"a":2}, {"a":3}, {"b":1}];
 var compare = "a";
 
 var keyFunction = function (myKey, compare){
@@ -323,4 +323,4 @@ var keyFunction = function (myKey, compare){
 		
 };
 
-console.log("Better F'ing Work" + keyFunction(myKey, compare));
+console.log("Lets hope this works " + keyFunction(myKey, compare));
