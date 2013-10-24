@@ -253,7 +253,7 @@ var dateTest = function (date1, date2, units){
 console.log("Did it work? " + dateTest(date1, date2, units));
 
 // Problem 9 
-var converted = 123456;
+var converted = "123456";
 	var flag = true;
 	
 	isNaN(converted) == false ? flag == false : flag == true;
@@ -267,3 +267,46 @@ var funcNumb = function (converted, flag){
 };
 
 console.log("I Hope this Shi** works... I am so tired " + funcNumb(converted,flag));
+
+// Problem 10
+
+var newarr = [1, 2, 3, 4, 5, 8, 9, 10];
+
+var compare = 3;
+
+var numbLength = function(newarr, compare){
+       
+       for(i=0;i<newarr.length;i++){
+               if(newarr[i] > compare)
+                       return newarr[i];
+       }
+       
+};
+
+console.log("Holy F Work " + numbLength(newarr, compare));
+
+// Problem 11 
+
+var array11 = [1, 2, 3, "sandwich", 5, 8, 8, 10];
+
+var int11 = 3;
+
+var function11 = function(array11, int11){
+       var total = 0;
+	   var flag = false;
+       for(i=0;i<array11.length;i++){
+       typeof array11[i] == "number" ? total += array11[i] : total=total;
+	   typeof array11[i] == "number" ? flag = true : 0;
+	  
+       }
+	   if(flag == false){
+	   return false;	   
+	   }else{
+		  return total; 
+		   };
+};
+
+console.log("Come on man!!... " + function11(array11, int11));
+
+// Problem 12
+ 
