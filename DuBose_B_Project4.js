@@ -310,3 +310,17 @@ console.log("Come on man!!... " + function11(array11, int11));
 
 // Problem 12
  
+var myKey = [{"B":1,"B":2,"B":3,"B":4,"B":5, "A":1}];
+var compare = "a";
+
+var keyFunction = function (myKey, compare){
+   return myKey.sort(function(a, b) {
+	   
+       var x = a[compare]; var y = b[compare];
+	   
+       return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+   });
+		
+};
+
+console.log("Better F'ing Work" + keyFunction(myKey, compare));
