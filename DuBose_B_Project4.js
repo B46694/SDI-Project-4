@@ -1,62 +1,11 @@
 //alert("JavaScript works!");
 
-// Problem 1: String Function
 
-/*var myString = "Some Text";
+// Problem 1
 
-myString.length
-myString.substring(from, to) // (0,4)
-myString.charAt(index) // (3) = "e"
-myString.indexOf(string) //("e") = 3
-myString.lastIndexOf("e") = 6
-
-var myStirng1 = "407-679-0100";
-
-var end = myString1.indexOf("-");
-var end2 = myString1.last.indexOf("-");
-
-var start = myString.indexOf("-")+1;
-var start2 = myString.last.indexOf("-")+1;
-
-var end3 = myString1.length;
-
-myString1.substring(0,end);
-
-myString1.substring(start,end);*/
-
-/*var checkNumber = function(val) {
-	
-	var strLength = val.length;
-	for (var i=0; i < strLength; i++) {
-		
-		if (val.substring(i, i+1) === "-") {
-			return i;
-		}	
-		
-	}
-	
-};*/
-
-// Problem Number 1
-
-			    	// 012-456-8901
-/*var checkNumber = function(val) {
-	//var strLength = val.length; 
-	//for (var i=0; i < strLength; i++) {	
-		if (val.substring(0,3) === "-") {
-			return true;
-		}
-		else{
-			return false;
-
-		}
-
-};
-
-console.log("The dash is in position " + checkNumber(phoneNumber1));
-console.log("The position this time is " + checkNumber(phoneNumber2));*/
-var phoneNumber1 = ("251-7.2-3202");
+var phoneNumber1 = ("251-752-3202");
 var phoneNumber2 = ("407-679-01000");
+var phoneNumber3 = ("407-679-0100.0");
 var numberCheck = function(number){
 	
 	var totalSet = number.length;
@@ -101,12 +50,15 @@ var numberCheck = function(number){
 		}
 	
 };
+console.log("*********** Problem 1 ***********");
+console.log("Is " + phoneNumber1 + " a phone number?: " + numberCheck(phoneNumber1));
+console.log("Is " + phoneNumber2 + " a phone number?: " + numberCheck(phoneNumber2));
+console.log("Is " + phoneNumber3 + " a phone number?: " + numberCheck(phoneNumber3));
 
-console.log("Blah " + numberCheck(phoneNumber1));
-console.log("Blah " + numberCheck(phoneNumber2));
 
 
 // Problem Number 2
+
 var email1 = ("fsosupport@fullsail");
 var email2 = ("brannon@fullsail.com");
 
@@ -127,9 +79,10 @@ var emailCheck = function(email){
 		}
 	
 };
+console.log("*********** Problem 2 ***********");
+console.log("Is " + email1 + " an email?: " + emailCheck(email1));
+console.log("Is " + email2 + " an email?: " + emailCheck(email2));
 
-console.log("Blah " + emailCheck(email1));
-console.log("Blah " + emailCheck(email2));
 
 // Problem 3
 
@@ -143,8 +96,11 @@ var httpCheck = function (http){
 		return false;
 		}	
 };
+
+console.log("*********** Problem 3 ***********");
 console.log("Blah " + httpCheck(http1));
 console.log("Blah " + httpCheck(http2));
+
 
 // Problem 4 
 
@@ -167,7 +123,9 @@ var upperCase = function (string){
 	
 };
 
+console.log("*********** Problem 4 ***********");
 console.log(upperCase(string1));
+
 
 // Problem 5
 
@@ -182,8 +140,9 @@ var sepReplace = function (names, comma, and){
 	return nameJoin;	
 	
 };
-
+console.log("*********** Problem 5 ***********");
 console.log(sepReplace(names, comma, and));
+
 
 // Problem 6
 
@@ -199,6 +158,7 @@ var numbFormat = function(numb, deci){
 };
 
 console.log(numbFormat(Pi, decimals));
+console.log("*********** Problem 6 ***********");
 
 // Problem 7
 numb1 = 5;
@@ -220,7 +180,7 @@ var percentCheck = function(numb1, numb2, numb3){
 		}
 	return msg1 + "\n" + msg2;
 };
-
+console.log("*********** Problem 7 ***********");
 console.log(percentCheck(numb1, numb2, numb3));
 
 // Problem 8 
@@ -249,10 +209,12 @@ var dateTest = function (date1, date2, units){
                return Math.round(difference_ms/days);
        }
 };
-
+console.log("*********** Problem 8 ***********");
 console.log("Did it work? " + dateTest(date1, date2, units));
 
+
 // Problem 9 
+
 var converted = "123456";
 	var flag = true;
 	
@@ -265,8 +227,9 @@ var funcNumb = function (converted, flag){
 	return parseFloat(converted);
 	
 };
-
+console.log("*********** Problem 9 ***********");
 console.log("I Hope this Shi** works... I am so tired " + funcNumb(converted,flag));
+
 
 // Problem 10
 
@@ -282,8 +245,9 @@ var numbLength = function(newarr, compare){
        }
        
 };
-
+console.log("*********** Problem 10 ***********");
 console.log("Holy F Work " + numbLength(newarr, compare));
+
 
 // Problem 11 
 
@@ -306,9 +270,12 @@ var function11 = function(array11, int11){
 		   };
 };
 
+console.log("*********** Problem 11 ***********");
 console.log("Come on man!!... " + function11(array11, int11));
 
+
 // Problem 12
+
 var myKey = new Array ();
  myKey = [{a:1}, {a:2}, {a:3}, {b:1}];
 var compare = "a";
@@ -321,6 +288,5 @@ var keyFunction = function (a,b) {
  	return 0;
 };
 
-
-
+console.log("*********** Problem 12 ***********");
 console.dir(myKey.sort(keyFunction));
