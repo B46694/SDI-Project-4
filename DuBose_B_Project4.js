@@ -107,24 +107,163 @@ console.log("Blah " + numberCheck(phoneNumber2));
 
 
 // Problem Number 2
-/*var name = ("Brannon");
+var email1 = ("fsosupport@fullsail");
+var email2 = ("brannon@fullsail.com");
 
-var checkName = function(val) {
-	if (val === name) {
+var emailCheck = function(email){
+	
+	var subMail = email.indexOf("@");
+	
+	if(!subMail){
+		return false;
+	}
+	
+	var dotPos = email.indexOf('.')+1;
+	
+	if(email.length - dotPos != 3){
+		return false;
+	}else{
 		return true;
-	}	
-		else {
-			return false;
-		};
+		}
 	
 };
 
+console.log("Blah " + emailCheck(email1));
+console.log("Blah " + emailCheck(email2));
 
-var returnValue = checkName("Brannon");
+// Problem 3
 
-if (returnValue) { 
-	console.log("Yes I am me");
-} else { 
-	console.log("No im not me");
+var http1 = ("http://");
+var http2 = ("https://");
+
+var httpCheck = function (http){
+	if(http.substr(0, 7) == "http://" || http.substr(0, 7) == "https://"){
+		return true;
+	}else{
+		return false;
+		}	
+};
+console.log("Blah " + httpCheck(http1));
+console.log("Blah " + httpCheck(http2));
+
+// Problem 4 
+
+var string1 = ("why is this all due on thursday and not sunday?");
+
+var upperCase = function (string){
+		
+	var upperarr = string.split(" ");
 	
-};*/
+	var formatString = '';
+	var formatArray = new Array();
+	
+	for(i=0;i<upperarr.length;i++){
+		formatArray.push(upperarr[i].charAt(0).toUpperCase() + upperarr[i].slice(1)); // pushes new string into a new array 
+	}
+	
+	formatString = formatArray.join(' ');
+	
+	return formatString;
+	
+};
+
+console.log(upperCase(string1));
+
+// Problem 5
+
+var comma = ",";
+var and = " &";
+var names = "Macs, iPhones, iPads";
+
+var sepReplace = function (names, comma, and){
+	var nameSplit = names.split(comma);
+	var nameJoin = nameSplit.join(and);
+	
+	return nameJoin;	
+	
+};
+
+console.log(sepReplace(names, comma, and));
+
+// Problem 6
+
+var Pi = Math.PI;
+var decimals = 19;
+
+var numbFormat = function(numb, deci){
+	if(typeof numb === "string"){
+		return parseFloat(numb).toFixed(deci);
+	}else{
+		return numb.toFixed(deci);
+		}	
+};
+
+console.log(numbFormat(Pi, decimals));
+
+// Problem 7
+numb1 = 5;
+numb2 = 10;
+numb3 = 50; 
+
+var percentCheck = function(numb1, numb2, numb3){
+	var msg1 = 'First Number is not within ' + numb3 + '% of the Second Number';
+	var msg2 = "First number is less that " + numb2;
+	
+	percent = parseFloat(numb3/100);
+	
+	if(numb1/numb2 <= percent){
+		msg1 = 'First Number is within ' + numb3 + '% of the Second Number';
+		}
+		
+	if(numb1 > numb2){
+		msg2 = "First number is greater than " + numb2;
+		}
+	return msg1 + "\n" + msg2;
+};
+
+console.log(percentCheck(numb1, numb2, numb3));
+
+// Problem 8 
+var date1 = ("July 4, 1776");
+var date2 = ("March 1, 1995");
+var units = ("days");
+
+var dateTest = function (date1, date2, units){
+
+	var d1 = new Date(date1);
+       var d2 = new Date(date2);
+       
+       var d1_ms = d1.getTime();
+       var d2_ms = d2.getTime();
+       
+       var difference_ms = d2_ms - d1_ms;
+       var minutes=1000*60;
+       var hours=minutes*60;
+       var days=hours*24;
+       var years=days*365;
+       
+       if(units == "hr"){
+               return Math.round(difference_ms/hours);
+       }
+       if(units == "days"){
+               return Math.round(difference_ms/days);
+       }
+};
+
+console.log("Did it work? " + dateTest(date1, date2, units));
+
+// Problem 9 
+var converted = 123456;
+	var flag = true;
+	
+	isNaN(converted) == false ? flag == false : flag == true;
+	
+var funcNumb = function (converted, flag){
+	if(flag == false)
+	return false;
+	else
+	return parseFloat(converted);
+	
+};
+
+console.log("I Hope this Shi** works... I am so tired " + funcNumb(converted,flag));
