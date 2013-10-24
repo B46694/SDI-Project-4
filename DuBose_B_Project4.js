@@ -244,9 +244,7 @@ console.log("Whats the next highest number from " + compare + ": " + numbLength(
 // Problem 11 
 
 var array11 = [1, 2, 3, "sandwich", 5, 8, 8, 10];
-
 var int11 = 3;
-
 var function11 = function(array11, int11){
        var total = 0;
 	   var flag = false;
@@ -269,10 +267,10 @@ console.log("Whats the total of the numbers in my array?: " + function11(array11
 // Problem 12
 
 var myKey = new Array ();
- myKey = [{a:1}, {a:2}, {a:3}, {b:1}];
 var compare = "a";
+myKey = [{a:1}, {a:2}, {a:3}, {b:1}];
 
-var keyFunction = function (a,b) {
+var keyFunction = function (a,b){
  	if (a.a < b.a)
   	  return -1;
 	 if (a.a > b.a)
