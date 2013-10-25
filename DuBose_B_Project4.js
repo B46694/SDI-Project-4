@@ -22,15 +22,6 @@ var numberCheck = function(number){
 	var secondIns = (number.substr(4,3));
 	var thirdIns = (number.substr(8,4));
 	
-	/*if(firstIns.indexOf(".")){
-		return false;	
-		}		
-	if(secondIns.indexOf(".")){
-		return false;	
-		}
-	if(thirdIns.indexOf(".")){
-		return false;	
-		}	*/
 	if(isNaN(firstIns)){
 		return false;		
 		}
