@@ -2,7 +2,7 @@
 
 
 // Problem 1
-
+// Please apply to project Project 2 Boolean Logic
 var phoneNumber1 = ("251-752-3202");
 var phoneNumber2 = ("407-679-01000");
 var phoneNumber3 = ("407-679-01.0");
@@ -143,7 +143,7 @@ console.log("Lets count " + Pi + " to 5 places: " + numbFormat(Pi, decimals));
 
 
 // Problem 7
-
+// Please apply to project Project 3 Coding Encapsulation
 numb1 = 5;
 numb2 = 10;
 numb3 = 50; 
@@ -169,7 +169,7 @@ console.log(percentCheck(numb1, numb2, numb3));
 
 
 // Problem 8 
-
+// Please apply to project Project 1 Technical Functionality
 var date1 = ("July 4, 1776");
 var date2 = ("March 1, 1995");
 var units = ("days");
@@ -200,7 +200,7 @@ console.log("I was born " + dateTest(date1, date2, units) + " days ater the birt
 
 
 // Problem 9 
-
+// Please apply to project Project 3 Coding Completness
 var converted = "123456";
 var flag = true;
 	
@@ -219,6 +219,7 @@ console.log("I am getting really tired... please convert: " + funcNumb(converted
 
 
 // Problem 10
+// Please apply to project Project 3 Arrays
 
 var newarr = [1, 2, 3, 5, 8, 9, 10];
 var compare = 3;
@@ -236,7 +237,7 @@ console.log("Whats the next highest number from " + compare + ": " + numbLength(
 
 
 // Problem 11 
-
+// Please apply to project Project 3 Loops
 var array11 = [1, 2, 3, "sandwich", 5, 8, 8, 10];
 var int11 = 3;
 var function11 = function(array11, int11){
