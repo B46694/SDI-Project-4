@@ -5,21 +5,24 @@
 
 var phoneNumber1 = ("251-752-3202");
 var phoneNumber2 = ("407-679-01000");
-var phoneNumber3 = ("407-679-0100.0");
+var phoneNumber3 = ("407-679-01.0");
 var numberCheck = function(number){
+	if(number.indexOf(".") != -1){
+		return false;
+	}
 	var totalSet = number.length;
 	
 	if(totalSet != 12){
 		return false;
 		}
-		
+	
 	var totalSet = number.length;
 	
 	var firstIns = (number.substr(0,3));
 	var secondIns = (number.substr(4,3));
 	var thirdIns = (number.substr(8,4));
 	
-	if(firstIns.indexOf(".")){
+	/*if(firstIns.indexOf(".")){
 		return false;	
 		}		
 	if(secondIns.indexOf(".")){
@@ -27,7 +30,7 @@ var numberCheck = function(number){
 		}
 	if(thirdIns.indexOf(".")){
 		return false;	
-		}	
+		}	*/
 	if(isNaN(firstIns)){
 		return false;		
 		}
@@ -97,7 +100,6 @@ console.log("Is " + http2 + " a URL?: " + httpCheck(http2));
 // Problem 4 
 
 var phrase1 = ("why is this all due on thursday and not sunday?");
-
 var upperCase = function (string){
 		
 	var upperarr = string.split(" ");	
@@ -154,6 +156,7 @@ console.log("Lets count " + Pi + " to 5 places: " + numbFormat(Pi, decimals));
 numb1 = 5;
 numb2 = 10;
 numb3 = 50; 
+
 var percentCheck = function(numb1, numb2, numb3){
 	var msg1 = "First Number is not within " + numb3 + "% of the Second Number";
 	var msg2 = "First number is less than " + numb2;
@@ -268,6 +271,7 @@ console.log("Whats the total of the numbers in my array?: " + function11(array11
 
 var myKey = new Array ();
 var compare = "a";
+
 myKey = [{a:1}, {a:2}, {a:3}, {b:1}];
 
 var keyFunction = function (a,b){
