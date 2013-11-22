@@ -182,12 +182,12 @@ var dateTest = function (date1, date2, units){
     var days=hours*24;
     var years=days*365;
       
-       if(units == "hr"){
-               return Math.round(difference_ms/hours);
-       }
-       if(units == "days"){
-               return Math.round(difference_ms/days);
-       }
+    if(units == "hr"){
+    	return Math.round(difference_ms/hours);
+    }
+    if(units == "days"){
+    	return Math.round(difference_ms/days);
+    }
 };
 console.log("");
 console.log("*********** Problem 8 ***********");
@@ -213,7 +213,7 @@ console.log("I am getting really tired... please convert: " + funcNumb(converted
 // Problem 10
 // Please apply to project Project 3 Arrays
 
-var newarr = [2, 1,4, 3, 5, 11, 9, 10];
+var newarr = [2, 1, 4, 3, 5, 11, 9, 10];
 var compare = 3;
 var numbLength = function(newarr, compare){
       newarr.sort(function(a,b) {return a-b;});	   
