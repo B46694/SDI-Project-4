@@ -91,7 +91,6 @@ console.log("Is " + http3 + " a URL?: " + httpCheck(http3));
 var phrase1 = ("why is this all due on thursday and not sunday?");
 var phrase2 = ("It IS cONVerting aLl uPPer CaSe tO LoweRCASE?");
 var upperCase = function (string){
-	
 	string = string.toLowerCase();	
 	var upperarr = string.split(" ");	
 	var formatString = "";
@@ -203,15 +202,12 @@ console.log("I was born " + dateTest(date1, date2, units) + " days ater the birt
 // Please apply to project Project 3 Coding Completness
 var converted = "123456";
 var flag = true;
-	
-isNaN(converted) == false ? flag == false : flag == true; // : is short for else statment
-	
 var funcNumb = function (converted, flag){
+	isNaN(converted) == false ? flag == false : flag == true; // : is short for else statment
 	if(flag == false)
 	return false;
 	else
-	return parseFloat(converted);
-	
+	return parseFloat(converted);	
 };
 console.log("");
 console.log("*********** Problem 9 ***********");
