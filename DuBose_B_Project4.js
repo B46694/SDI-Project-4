@@ -14,10 +14,8 @@ var numberCheck = function(number){
 	
 	if(totalSet != 12){
 		return false;
-		}
-	
-	var totalSet = number.length;
-	
+		}	
+	var totalSet = number.length;	
 	var firstIns = (number.substr(0,3));
 	var secondIns = (number.substr(4,3));
 	var thirdIns = (number.substr(8,4));
@@ -77,7 +75,6 @@ var httpCheck = function (http){
 	}else{
 		return false;
 		}	
-	
 };
 console.log("");
 console.log("*********** Problem 3 ***********");
@@ -143,9 +140,9 @@ console.log("Lets count " + Pi + " to 5 places: " + numbFormat(Pi, decimals));
 
 // Problem 7
 // Please apply to project Project 3 Coding Encapsulation
-numb1 = 5;
-numb2 = 10;
-numb3 = 50; 
+var numb1 = 5;
+var numb2 = 10;
+var numb3 = 50; 
 
 var percentCheck = function(numb1, numb2, numb3){
 	var msg1 = "First Number is not within " + numb3 + "% of the Second Number";
@@ -247,7 +244,7 @@ var function11 = function(array11, int11){
 	   return false;	   
 	   }else{
 		  return total; 
-		   };
+   };
 };
 console.log("");
 console.log("*********** Problem 11 ***********");
