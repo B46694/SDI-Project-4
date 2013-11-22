@@ -79,7 +79,6 @@ var httpCheck = function (http){
 		}	
 	
 };
-
 console.log("");
 console.log("*********** Problem 3 ***********");
 console.log("Is " + http1 + " a URL?: " + httpCheck(http1));
