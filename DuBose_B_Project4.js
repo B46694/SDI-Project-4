@@ -258,10 +258,8 @@ console.log("Whats the total of the numbers in my array?: " + function11(array11
 
 var myKey = new Array ();
 var compare = "a";
-
-myKey = [{a:1}, {a:2}, {a:3}, {b:1}];
-
 var keyFunction = function (a,b){
+	myKey = [{a:1}, {a:2}, {a:3}, {b:1}];
  	if (a.a < b.a)
   	  return -1;
 	 if (a.a > b.a)
