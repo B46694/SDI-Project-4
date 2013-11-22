@@ -2,6 +2,7 @@
 
 
 // Problem 1
+// Please Apply to Project 2 boolean logic
 var phoneNumber1 = ("251-752-3202");
 var phoneNumber2 = ("407-679-01000");
 var phoneNumber3 = ("407-679-01.0");
@@ -42,6 +43,7 @@ console.log("Is " + phoneNumber3 + " a phone number?: " + numberCheck(phoneNumbe
 
 
 // Problem Number 2
+// Please Apply to project 2 return
 var email1 = ("fsosupport@fullsail");
 var email2 = ("brannon@fullsail.com");
 var email3 = ("brannon@@fullsail.com");
@@ -61,6 +63,7 @@ console.log("Is " + email4 + " an email?: " + emailCheck(email4));
 
 
 // Problem 3
+// Please apply to project 3 codind/completness
 var http1 = ("http://");
 var http2 = ("https://");
 var http3 = ("htttps://");
@@ -79,6 +82,7 @@ console.log("Is " + http3 + " a URL?: " + httpCheck(http3));
 
 
 // Problem 4 
+// Please also apply to project 3 codind/completness
 var phrase1 = ("why is this all due on thursday and not sunday?");
 var phrase2 = ("It IS cONVerting aLl uPPer CaSe tO LoweRCASE?");
 var upperCase = function (string){
@@ -117,6 +121,7 @@ console.log("What are my favorite apple products?: " + sepReplace(names, comma, 
 
 
 // Problem 6
+// Please apply to project 1 parse
 var Pi = Math.PI;
 var decimals = 5;
 var numbFormat = function(numb, deci){
@@ -238,6 +243,7 @@ console.log("Whats the total of the numbers in my array?: " + function11(array11
 
 
 // Problem 12
+// Please Apply to project 3 arrays
 var myKey = new Array ();
 var compare = "a";
 var keyFunction = function (a,b){
