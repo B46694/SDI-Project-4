@@ -2,7 +2,6 @@
 
 
 // Problem 1
-// Please apply to project Project 2 Boolean Logic
 var phoneNumber1 = ("251-752-3202");
 var phoneNumber2 = ("407-679-01000");
 var phoneNumber3 = ("407-679-01.0");
@@ -42,9 +41,7 @@ console.log("Is " + phoneNumber2 + " a phone number?: " + numberCheck(phoneNumbe
 console.log("Is " + phoneNumber3 + " a phone number?: " + numberCheck(phoneNumber3));
 
 
-
 // Problem Number 2
-
 var email1 = ("fsosupport@fullsail");
 var email2 = ("brannon@fullsail.com");
 var email3 = ("brannon@@fullsail.com");
@@ -63,9 +60,7 @@ console.log("Is " + email3 + " an email?: " + emailCheck(email3));
 console.log("Is " + email4 + " an email?: " + emailCheck(email4));
 
 
-
 // Problem 3
-
 var http1 = ("http://");
 var http2 = ("https://");
 var http3 = ("htttps://");
@@ -84,7 +79,6 @@ console.log("Is " + http3 + " a URL?: " + httpCheck(http3));
 
 
 // Problem 4 
-
 var phrase1 = ("why is this all due on thursday and not sunday?");
 var phrase2 = ("It IS cONVerting aLl uPPer CaSe tO LoweRCASE?");
 var upperCase = function (string){
@@ -106,8 +100,8 @@ console.log("*********** Problem 4 ***********");
 console.log("Lets convert a phrase to a title: " + upperCase(phrase1));
 console.log("Lets convert a phrase to a title: " + upperCase(phrase2));
 
-// Problem 5
 
+// Problem 5
 var comma = ",";
 var and = " &";
 var names = "Macs, iPhones, iPads";
@@ -123,7 +117,6 @@ console.log("What are my favorite apple products?: " + sepReplace(names, comma, 
 
 
 // Problem 6
-
 var Pi = Math.PI;
 var decimals = 5;
 var numbFormat = function(numb, deci){
@@ -139,7 +132,6 @@ console.log("Lets count " + Pi + " to 5 places: " + numbFormat(Pi, decimals));
 
 
 // Problem 7
-// Please apply to project Project 3 Coding Encapsulation
 var numb1 = 5;
 var numb2 = 10;
 var numb3 = 50; 
@@ -164,7 +156,6 @@ console.log(percentCheck(numb1, numb2, numb3));
 
 
 // Problem 8 
-// Please apply to project Project 1 Technical Functionality
 var date1 = ("July 4, 1776");
 var date2 = ("March 1, 1995");
 var units = ("days");
@@ -195,7 +186,6 @@ console.log("I was born " + dateTest(date1, date2, units) + " days ater the birt
 
 
 // Problem 9 
-// Please apply to project Project 3 Coding Completness
 var converted = "123456";
 var flag = true;
 var funcNumb = function (converted, flag){
@@ -211,8 +201,6 @@ console.log("I am getting really tired... please convert: " + funcNumb(converted
 
 
 // Problem 10
-// Please apply to project Project 3 Arrays
-
 var newarr = [2, 1, 4, 3, 5, 11, 9, 10];
 var compare = 3;
 var numbLength = function(newarr, compare){
@@ -228,7 +216,6 @@ console.log("Whats the next highest number from " + compare + ": " + numbLength(
 
 
 // Problem 11 
-// Please apply to project Project 3 Loops
 var array11 = [1, 2, 3, "sandwich", 5, 8, 8, 10];
 var int11 = 3;
 var function11 = function(array11, int11){
@@ -251,14 +238,13 @@ console.log("Whats the total of the numbers in my array?: " + function11(array11
 
 
 // Problem 12
-
 var myKey = new Array ();
 var compare = "a";
 var keyFunction = function (a,b){
 	myKey = [{a:1}, {a:2}, {a:3}, {b:1}];
  	if (a.a < b.a)
   	  return -1;
-	 if (a.a > b.a)
+	if (a.a > b.a)
  	  return 1;
  	return 0;
 };
