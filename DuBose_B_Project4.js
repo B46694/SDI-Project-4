@@ -89,8 +89,10 @@ console.log("Is " + http3 + " a URL?: " + httpCheck(http3));
 // Problem 4 
 
 var phrase1 = ("why is this all due on thursday and not sunday?");
+var phrase2 = ("It IS cONVerting aLl uPPer CaSe tO LoweRCASE?");
 var upperCase = function (string){
-		
+	
+	string = string.toLowerCase();	
 	var upperarr = string.split(" ");	
 	var formatString = "";
 	var formatArray = new Array();
@@ -106,7 +108,7 @@ var upperCase = function (string){
 console.log("");
 console.log("*********** Problem 4 ***********");
 console.log("Lets convert a phrase to a title: " + upperCase(phrase1));
-
+console.log("Lets convert a phrase to a title: " + upperCase(phrase2));
 
 // Problem 5
 
