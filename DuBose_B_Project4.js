@@ -49,43 +49,41 @@ console.log("Is " + phoneNumber3 + " a phone number?: " + numberCheck(phoneNumbe
 
 var email1 = ("fsosupport@fullsail");
 var email2 = ("brannon@fullsail.com");
-var emailCheck = function(email){
-	
-	var subMail = email.indexOf("@");
-	
-	if(!subMail){
-		return false;
-	}
-		
-	var dotPos = email.indexOf(".")+1;
-	
-	if(email.length - dotPos != 3){
-		return false;
-	}else{
-		return true;
-		}	
-};
-
+var email3 = ("brannon@@fullsail.com");
+var email4 = ("brannon@fullsail.com");
+var emailCheck = function(email) { 
+    var subMail = email.lastIndexOf('@');
+    var subMail1 = email.lastIndexOf('.');
+        return (subMail < subMail1 && subMail > 0 && email.indexOf('@@') ==
+            -1 && subMail1 > 2 && (email.length - subMail1) > 2 && email.indexOf(" ") == -1);
+	};
+console.log("");
 console.log("*********** Problem 2 ***********");
 console.log("Is " + email1 + " an email?: " + emailCheck(email1));
 console.log("Is " + email2 + " an email?: " + emailCheck(email2));
+console.log("Is " + email3 + " an email?: " + emailCheck(email3));
+console.log("Is " + email4 + " an email?: " + emailCheck(email4));
+
 
 
 // Problem 3
 
 var http1 = ("http://");
 var http2 = ("https://");
+var http3 = ("htttps://");
 var httpCheck = function (http){
-	if(http.substr(0, 7) == "http://" || http.substr(0, 7) == "https://"){
+	if(http.substr(0, 7) == "http://" || http.substr(0, 8) == "https://"){
 		return true;
 	}else{
 		return false;
 		}	
+	
 };
-
+console.log("");
 console.log("*********** Problem 3 ***********");
 console.log("Is " + http1 + " a URL?: " + httpCheck(http1));
 console.log("Is " + http2 + " a URL?: " + httpCheck(http2));
+console.log("Is " + http3 + " a URL?: " + httpCheck(http3));
 
 
 // Problem 4 
@@ -105,7 +103,7 @@ var upperCase = function (string){
 	
 	return formatString;	
 };
-
+console.log("");
 console.log("*********** Problem 4 ***********");
 console.log("Lets convert a phrase to a title: " + upperCase(phrase1));
 
@@ -121,7 +119,7 @@ var sepReplace = function (names, comma, and){
 	
 	return nameJoin;		
 };
-
+console.log("");
 console.log("*********** Problem 5 ***********");
 console.log("What are my favorite apple products?: " + sepReplace(names, comma, and));
 
@@ -137,7 +135,7 @@ var numbFormat = function(numb, deci){
 		return numb.toFixed(deci);
 		}	
 };
-
+console.log("");
 console.log("*********** Problem 6 ***********");
 console.log("Lets count " + Pi + " to 5 places: " + numbFormat(Pi, decimals));
 
@@ -163,7 +161,7 @@ var percentCheck = function(numb1, numb2, numb3){
 		}
 	return msg1 + "\n" + msg2;
 };
-
+console.log("");
 console.log("*********** Problem 7 ***********");
 console.log(percentCheck(numb1, numb2, numb3));
 
@@ -194,7 +192,7 @@ var dateTest = function (date1, date2, units){
                return Math.round(difference_ms/days);
        }
 };
-
+console.log("");
 console.log("*********** Problem 8 ***********");
 console.log("I was born " + dateTest(date1, date2, units) + " days ater the birth of our country.");
 
@@ -213,7 +211,7 @@ var funcNumb = function (converted, flag){
 	return parseFloat(converted);
 	
 };
-
+console.log("");
 console.log("*********** Problem 9 ***********");
 console.log("I am getting really tired... please convert: " + funcNumb(converted,flag));
 
@@ -231,7 +229,7 @@ var numbLength = function(newarr, compare){
        }
        
 };
-
+console.log("");
 console.log("*********** Problem 10 ***********");
 console.log("Whats the next highest number from " + compare + ": " + numbLength(newarr, compare));
 
@@ -254,7 +252,7 @@ var function11 = function(array11, int11){
 		  return total; 
 		   };
 };
-
+console.log("");
 console.log("*********** Problem 11 ***********");
 console.log("Whats the total of the numbers in my array?: " + function11(array11, int11));
 
@@ -273,6 +271,6 @@ var keyFunction = function (a,b){
  	  return 1;
  	return 0;
 };
-
+console.log("");
 console.log("*********** Problem 12 ***********");
 console.dir(myKey.sort(keyFunction));
