@@ -143,7 +143,6 @@ console.log("Lets count " + Pi + " to 5 places: " + numbFormat(Pi, decimals));
 var numb1 = 5;
 var numb2 = 10;
 var numb3 = 50; 
-
 var percentCheck = function(numb1, numb2, numb3){
 	var msg1 = "First Number is not within " + numb3 + "% of the Second Number";
 	var msg2 = "First number is less than " + numb2;
@@ -172,17 +171,17 @@ var units = ("days");
 var dateTest = function (date1, date2, units){
 
 	var d1 = new Date(date1);
-       var d2 = new Date(date2);
+    var d2 = new Date(date2);
        
-       var d1_ms = d1.getTime();
-       var d2_ms = d2.getTime();
+    var d1_ms = d1.getTime();
+    var d2_ms = d2.getTime();
        
-       var difference_ms = d2_ms - d1_ms;
-       var minutes=1000*60;
-       var hours=minutes*60;
-       var days=hours*24;
-       var years=days*365;
-       
+    var difference_ms = d2_ms - d1_ms;
+    var minutes=1000*60;
+    var hours=minutes*60;
+    var days=hours*24;
+    var years=days*365;
+      
        if(units == "hr"){
                return Math.round(difference_ms/hours);
        }
