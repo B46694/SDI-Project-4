@@ -217,15 +217,14 @@ console.log("I am getting really tired... please convert: " + funcNumb(converted
 // Problem 10
 // Please apply to project Project 3 Arrays
 
-var newarr = [1, 2, 3, 5, 8, 9, 10];
+var newarr = [2, 1,4, 3, 5, 11, 9, 10];
 var compare = 3;
 var numbLength = function(newarr, compare){
-       
+      newarr.sort(function(a,b) {return a-b;});	   
        for(i=0;i<newarr.length;i++){
                if(newarr[i] > compare)
                        return newarr[i];
-       }
-       
+       }    
 };
 console.log("");
 console.log("*********** Problem 10 ***********");
